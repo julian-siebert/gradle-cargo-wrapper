@@ -56,8 +56,8 @@ public class CargoTask extends DefaultTask {
         this.outputFiles = new ArrayList<>();
 
         config.outputs.forEach((target, build) -> {
-            File buildFile = new File(buildTargetDirectory, File.separator + config.profile + File.separator + build);
-            File targetFile = new File(target, build);
+            File buildFile = new File(buildTargetDirectory, File.separator + config.profile + File.separator + target);
+            File targetFile = new File(build, target);
 
             if (!buildFile.exists()) throw new GradleException(build + " file doesn't exist in target directory");
 
