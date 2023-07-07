@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public final class CargoExtension {
+public class CargoExtension {
     public static final String EXTENSION_NAME = "cargo";
 
     public static final String BUILD_TASK_NAME = "cargoBuild";
